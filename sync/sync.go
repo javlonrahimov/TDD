@@ -14,6 +14,7 @@ func (c *Counter) Inc() {
 }
 
 func (c *Counter) Value() int {
+	fmt.Println(c.value)
 	return c.value
 }
 
