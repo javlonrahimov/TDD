@@ -30,3 +30,7 @@ func Server(store Store) http.HandlerFunc {
 		fmt.Fprint(w, store.Fetch())
 	}
 }
+
+func Hello() int {
+return 12
+}
