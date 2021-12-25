@@ -16,6 +16,10 @@ type SpyStore struct {
 	cancelled bool
 }
 
+func main() {
+	fmt.Println("Hello world")
+}
+
 func (s *SpyStore) Fetch() string {
 	time.Sleep(100 * time.Millisecond)
 	return s.response
@@ -32,5 +36,5 @@ func Server(store Store) http.HandlerFunc {
 }
 
 func Hello() int {
-return 12
+	return 12
 }
